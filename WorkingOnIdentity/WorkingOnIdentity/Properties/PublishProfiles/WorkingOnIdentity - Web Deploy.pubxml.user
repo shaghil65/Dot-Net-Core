@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwuzq7XbbN0OD0dluxE920AAAAAACAAAAAAAQZgAAAAEAACAAAABj/faL0FmdB/kr5wdiVWhB4+AxIa2S/IuSHx16NscpMQAAAAAOgAAAAAIAACAAAAC07WJbbMt+yfDnMV4XzuB7CsZ9FkLwagTgAbE+DAsK0IAAAADk+ZPug38wx9WPSwpqb2eOVT1samlUBrPJTKOuSpQ56RJXmMafpQscwQFnVFDD/RLxsYay2wGuo7y31VZMgjcy+cyoYCMVmOYC2LxkAmpHoB92gDcV+GZ76pWf0vie6KWnB4sxUWVo5lRkCeMibPkrNiPQqnoeU9PoKcArd3pEE0AAAAAFw/d6Z5jKkSbqQKw0TWXGsaxz/1xnVZnVtJYJ36BmIyLNFakFjvggMCMx5vSE4bkP2l6chBty80gtkUq4s8Pu</EncryptedPassword>
+    <History>True|2022-09-19T09:14:04.4456737Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ApplicationDbContextConnection">
+      <Value>Data Source=tcp:workingonidentitydbserver.database.windows.net,1433%3bInitial Catalog=WorkingOnIdentity_db%3bUser Id=shaghil%40workingonidentitydbserver%3bPassword=Karachi%40123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="WorkingOnIdentity.Areas.Identity.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:workingonidentitydbserver.database.windows.net,1433%3bInitial Catalog=WorkingOnIdentity_db%3bUser Id=shaghil%40workingonidentitydbserver%3bPassword=Karachi%40123</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

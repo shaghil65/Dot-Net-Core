@@ -1,0 +1,14 @@
+﻿@inject IHttpContextAccessor Accessor
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1>Dashboard</h1>
+@if (@Accessor.HttpContext.Session.GetString("user") != null)
+{
+    <p>Hello, @Accessor.HttpContext.Session.GetString("user")</p>
+    <a asp-action="Logout" asp-controller="home">logout</a>
+}
+else{
+    <a asp-action="index" asp-controller="home">login</a>
+}

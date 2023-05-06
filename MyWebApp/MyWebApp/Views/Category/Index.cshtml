@@ -1,0 +1,73 @@
+﻿@model IEnumerable<MyWebApp.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="row">
+    <div class="col-6">
+        <h1>Categories</h1>
+    </div>
+    
+    <div class="col-6 text-end">
+        <p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+    </div>
+
+</div>
+
+<form asp-action="index">
+    <div class="row">
+    <div class="col-10">
+        @Html.TextBox("search", null, new { @class = "form-control" })
+    </div>
+    
+    <div class="col-2 text-end">
+        <p><a asp-action="index" class="btn btn-success">Search</a></p>
+    </div>
+
+</div>
+</form>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisplayOrder)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.CreatedDateTime)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DisplayOrder)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.CreatedDateTime)
+            </td>*@
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

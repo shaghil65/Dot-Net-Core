@@ -1,0 +1,32 @@
+﻿@model Category
+<h2 class="pt-4">Create Category</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
+            <form method="post">
+                    <div class="form-group">
+                        <label asp-for="Name" class="form-label mt-4"></label>
+                        <input asp-for="Name" type="text" class="form-control" placeholder="Enter Name">
+                    </div>
+
+                    <div>
+                    <label asp-for="DisplayOrder" class="form-label mt-4"></label>
+                        <input asp-for="DisplayOrder" type="number" class="form-control" placeholder="Enter Order">
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <a class="btn btn-outline-secondary form-control" asp-area="" asp-controller="Category" asp-action="Index">Back to List</a>
+                        </div>
+                        <div class="col-6">
+                        <button type="submit" class="btn btn-primary form-control">Submit</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
