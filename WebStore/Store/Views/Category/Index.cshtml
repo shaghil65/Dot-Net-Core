@@ -15,6 +15,7 @@
             <tr>
                 <th>Name</th>
                 <th>DisplayOrder</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,14 @@
                 <tr>
                     <td>@item.Name</td>
                     <td>@item.DisplayOrder</td>
+                    <td class="text-center">
+                        <div class="btn-group w-50" role="group">
+                            <a type="button" class="btn btn-primary mx-2" asp-route-id="@item.Id" asp-controller="Category" asp-action="Edit"><i class="bi bi-pencil-square"></i>Edit</a>
+                            <span class="opacity-25"> | </span>
+                            <a type="button" class="btn btn-outline-danger mx-2" asp-route-id="@item.Id" asp-controller="Category" asp-action="Delete"><i class="bi bi-trash"></i>Delete</a>
+                        </div>
+
+                    </td>
                 </tr>
 
             }
