@@ -35,6 +35,7 @@ namespace Store.Controllers
             {
                 _db.Categories.Add(category);
                 _db.SaveChanges();
+                TempData["insert"] = "Category added successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -56,6 +57,7 @@ namespace Store.Controllers
             {
                 _db.Categories.Update(category);
                 _db.SaveChanges();
+                TempData["edit"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -67,6 +69,7 @@ namespace Store.Controllers
             if (category != null)
             {
                 _db.Categories.Remove(category);
+                TempData["delete"] = "Category removed successfully";
                 _db.SaveChanges();
             }
             return RedirectToAction("Index");
