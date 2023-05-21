@@ -1,0 +1,17 @@
+E:\asp.netCore\WebStore\Store.DataAccess\bin\Debug\net7.0\Store.DataAccess.deps.json
+E:\asp.netCore\WebStore\Store.DataAccess\bin\Debug\net7.0\Store.DataAccess.runtimeconfig.json
+E:\asp.netCore\WebStore\Store.DataAccess\bin\Debug\net7.0\Store.DataAccess.dll
+E:\asp.netCore\WebStore\Store.DataAccess\bin\Debug\net7.0\Store.DataAccess.pdb
+E:\asp.netCore\WebStore\Store.DataAccess\bin\Debug\net7.0\Store.Models.dll
+E:\asp.netCore\WebStore\Store.DataAccess\bin\Debug\net7.0\Store.Models.pdb
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.csproj.AssemblyReference.cache
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.AssemblyInfoInputs.cache
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.AssemblyInfo.cs
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.csproj.CoreCompileInputs.cache
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.csproj.CopyComplete
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.dll
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\refint\Store.DataAccess.dll
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.pdb
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\Store.DataAccess.genruntimeconfig.cache
+E:\asp.netCore\WebStore\Store.DataAccess\obj\Debug\net7.0\ref\Store.DataAccess.dll

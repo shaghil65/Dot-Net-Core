@@ -1,0 +1,12 @@
+E:\asp.netCore\WebStore\Store.Utility\bin\Debug\net7.0\Store.Utility.deps.json
+E:\asp.netCore\WebStore\Store.Utility\bin\Debug\net7.0\Store.Utility.dll
+E:\asp.netCore\WebStore\Store.Utility\bin\Debug\net7.0\Store.Utility.pdb
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\Store.Utility.csproj.AssemblyReference.cache
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\Store.Utility.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\Store.Utility.AssemblyInfoInputs.cache
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\Store.Utility.AssemblyInfo.cs
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\Store.Utility.csproj.CoreCompileInputs.cache
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\Store.Utility.dll
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\refint\Store.Utility.dll
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\Store.Utility.pdb
+E:\asp.netCore\WebStore\Store.Utility\obj\Debug\net7.0\ref\Store.Utility.dll

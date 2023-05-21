@@ -15,17 +15,16 @@ namespace Store.Controllers
         {
             _db = db ;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var categoryList = _db.Categories.ToList();
-            return View(categoryList);
+            return View(await _db.Categories.ToListAsync());
         }
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost,AutoValidateAntiforgeryToken]
-        public IActionResult Create(Category category)
+        public async Task<IActionResult> Create(Category category)
         {
             if (category.Name == category.DisplayOrder.ToString())
             {
@@ -33,46 +32,51 @@ namespace Store.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(category);
-                _db.SaveChanges();
+                await _db.Categories.AddAsync(category);
+                await _db.SaveChangesAsync();
                 TempData["insert"] = "Category added successfully";
                 return RedirectToAction("Index");
             }
             return View();
         }
 
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             if (id > 0)
             {
-                var category = _db.Categories.FirstOrDefault(c => c.Id == id);
-                return View(category);
+                var category = await _db.Categories.FirstOrDefaultAsync(c => c.Id == id);
+                if (category != null)
+                {
+                    return View(category);
+                }
             }
             return View();
         }
+
         [HttpPost, AutoValidateAntiforgeryToken]
-        public IActionResult Edit(Category category)
+        public async Task<IActionResult> Edit(Category category)
         {
             if (ModelState.IsValid)
             {
                 _db.Categories.Update(category);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
                 TempData["edit"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
             return View();
         }
 
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            Category? category = _db.Categories.Find(id);
+            Category? category = await _db.Categories.FindAsync(id);
             if (category != null)
             {
                 _db.Categories.Remove(category);
                 TempData["delete"] = "Category removed successfully";
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             return RedirectToAction("Index");
         }
+
     }
 }

@@ -1,0 +1,12 @@
+E:\asp.netCore\WebStore\Store.Models\bin\Debug\net7.0\Store.Models.deps.json
+E:\asp.netCore\WebStore\Store.Models\bin\Debug\net7.0\Store.Models.dll
+E:\asp.netCore\WebStore\Store.Models\bin\Debug\net7.0\Store.Models.pdb
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\Store.Models.csproj.AssemblyReference.cache
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\Store.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\Store.Models.AssemblyInfoInputs.cache
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\Store.Models.AssemblyInfo.cs
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\Store.Models.csproj.CoreCompileInputs.cache
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\Store.Models.dll
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\refint\Store.Models.dll
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\Store.Models.pdb
+E:\asp.netCore\WebStore\Store.Models\obj\Debug\net7.0\ref\Store.Models.dll

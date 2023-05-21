@@ -1132,6 +1132,31 @@
             "rid": "win"
           }
         }
+      },
+      "Store.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Store.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Store.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.DataAccess.dll": {}
+        }
+      },
+      "Store.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Store.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Models.dll": {}
+        }
       }
     }
   },
@@ -3452,13 +3477,25 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Store.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Store.DataAccess/Store.DataAccess.csproj",
+      "msbuildProject": "../Store.DataAccess/Store.DataAccess.csproj"
+    },
+    "Store.Models/1.0.0": {
+      "type": "project",
+      "path": "../Store.Models/Store.Models.csproj",
+      "msbuildProject": "../Store.Models/Store.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.5"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
+      "Store.DataAccess >= 1.0.0",
+      "Store.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3494,7 +3531,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\asp.netCore\\WebStore\\Store.DataAccess\\Store.DataAccess.csproj": {
+              "projectPath": "E:\\asp.netCore\\WebStore\\Store.DataAccess\\Store.DataAccess.csproj"
+            },
+            "E:\\asp.netCore\\WebStore\\Store.Models\\Store.Models.csproj": {
+              "projectPath": "E:\\asp.netCore\\WebStore\\Store.Models\\Store.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
