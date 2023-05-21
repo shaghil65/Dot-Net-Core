@@ -11,7 +11,7 @@ namespace Store.Models
         [DisplayName("Category Name")]
         [MaxLength(30)]
         public string Name { get; set; }
-        [DisplayName("Dislay Order")]
+        [DisplayName("Display Order")]
         [Range(1,100)]
         public int DisplayOrder { get; set; }
     }

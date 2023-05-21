@@ -1,40 +1,47 @@
 ﻿@model List<Category>
 
 <div class="container">
-
-    <div class="row pt-4">
-        <div class="col-10">
-            <h2>Categories</h2>
+    <div class="card border-primary mt-3">
+        <div class="card-header text-center">
+            <h2 class="card-title">Categories</h2>
         </div>
-        <div class="col-2">
-            <a type="button" class="btn btn-primary" asp-controller="Category" asp-action="Create"><i class="bi bi-plus-square"></i>   Add Category</a>
+        <div class="card-body">
+            <div class="row px-3">
+                <div class="row mb-3">
+                    <div class="col-10">
+                    </div>
+                    <div class="col-2">
+                        <a type="button" class="btn btn-success" asp-controller="Category" asp-action="Create"><i class="bi bi-plus-square"></i>   Add Category</a>
+                    </div>
+                </div>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>DisplayOrder</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OrderBy(u => u.DisplayOrder))
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.DisplayOrder</td>
+                                <td class="text-center">
+                                    <div class="d-flex" role="group">
+                                        <a type="button" class="btn btn-primary w-50 mx-2" asp-route-id="@item.Id" asp-controller="Category" asp-action="Edit"><i class="bi bi-pencil-square"></i>Edit</a>
+                                        <a type="button" class="btn btn-outline-danger w-50 mx-2" asp-route-id="@item.Id" asp-controller="Category" asp-action="Delete"><i class="bi bi-trash"></i>Delete</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>DisplayOrder</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.OrderBy(u => u.DisplayOrder))
-            {
-                <tr>
-                    <td>@item.Name</td>
-                    <td>@item.DisplayOrder</td>
-                    <td class="text-center">
-                        <div class="btn-group w-50" role="group">
-                            <a type="button" class="btn btn-primary mx-2" asp-route-id="@item.Id" asp-controller="Category" asp-action="Edit"><i class="bi bi-pencil-square"></i>Edit</a>
-                            <span class="opacity-25"> | </span>
-                            <a type="button" class="btn btn-outline-danger mx-2" asp-route-id="@item.Id" asp-controller="Category" asp-action="Delete"><i class="bi bi-trash"></i>Delete</a>
-                        </div>
-
-                    </td>
-                </tr>
-
-            }
-        </tbody>
-    </table>
 </div>
